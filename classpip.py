@@ -9,7 +9,7 @@ def exec_cmd(cmd):  # 读取cmd输出结果
 
 
 def outdated():  # 可更新目录
-    q = exec_cmd('pip --outdated')
+    q = exec_cmd('pip list --outdated')
     if q:
         return q
     else:
